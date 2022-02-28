@@ -65,7 +65,7 @@ int wartoscPM10(unsigned char *buf) // generacja wartosci PM10
   return PM10v;
 }
 
-bool sprawdzLancuch(unsigned char *buf, int dlugosc) // sprawdzenie poprawności lancucha, tj. jego dlugosci wynoszacej n 24 bajty
+bool sprawdzLancuch(unsigned char *buf, int dlugosc) // sprawdzenie poprawności lancucha, tj. jego dlugosci wynoszacej n 24 bajty, jezeli jest poprawny funkcja zwraca 1
 {  
   bool flaga=0;
   int suma=0;
