@@ -8,10 +8,10 @@
 
 LiquidCrystal_I2C lcd(0x27, 16, 2); // I2C address 0x27, 16 column and 2 rows
 
-char linia1[16], linia2[16];
-unsigned char bufor [N];
-int PM25 = 20, PM10 = 20;
-int wartoscPM25(unsigned char *thebuf);
+char linia1[16], linia2[16]; //inicjalizacja dlugosci ciagu znakow wsywietlanych na lcd
+unsigned char bufor [N]; //dlugosc ramki bitow komunicjacyjnych z czujnikiem PMS
+int PM25 = 20, PM10 = 20; //domyslne wartosci PM
+int wartoscPM25(unsigned char *thebuf); //prototypy funkcji, bez tego kompilator nie poszuka funcji dalej w kodzie
 int wartoscPM10(unsigned char *thebuf);
 char sprawdzLancuch(unsigned char *thebuf, char leng);
 
